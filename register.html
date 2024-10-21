@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IT Support</title>
+    <link rel="stylesheet" href="css/style _register.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="header__logo">
+                <p class="logo">
+                    IT Support
+                </p>
+            </div>
+            <nav class="header__nav">
+                <ul class="hedaer__menu">
+                    <li class="menu__li"><a class="menu__link" href="index.html">Главная</a></li>
+                    <li class="menu__li">
+                        <a class="menu__link" href="register.html">Регестрация</a>
+                    </li>
+                    <li class="menu__li">
+                        <a class="menu__link" href="vxod.html">Авторизация</a>
+                    </li>
+                    <li class="menu__li">
+                        <a class="menu__link" href="o_nas.html">О нас</a>
+                    </li>
+                </ul>
+
+
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="s1">
+            <div class="s1__wrapper">
+                <div class="s1__container">
+
+                    <div class="style__foma">
+                        <form class="forma" id="registrationForm" action="/register" method="POST">
+                            <label class="label__form" for="login">Логин</label>
+                            <input class="inp__form" type="text" id="login" name="login" placeholder="Логин" required>
+                        
+                            <label class="label__form" for="password">Пароль</label>
+                            <input class="inp__form" type="password" id="password" name="password" placeholder="Пароль" required minlength="6">
+                        
+                            <label class="label__form" for="fullname">ФИО</label>
+                            <input class="inp__form" type="text" id="fullname" name="fullname" placeholder="ФИО" required>
+                        
+                            <label class="label__form" for="phone">Телефон</label>
+                            <input class="inp__form" type="tel" id="phone" name="phone"  placeholder="+7(000)000-00-00" required>
+                        
+                            <label class="label__form" for="email">Email</label>
+                            <input class="inp__form" type="email" id="email" name="email"  placeholder="Email" required pattern="[0-9]{6}">
+                        
+                            <button class="btn__form" type="submit">Зарегистрироваться</button>
+                          </form>
+                    </div>
+
+                </div>
+
+                <img class="s1__bc__img" src="img/back.png" alt="" />
+            </div>
+        </div>
+
+
+    </main>
+
+    
+
+
+    <!-- <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__logo">
+                <p class="logo">
+                    IT Support
+                </p>
+            </div>
+            <nav class="footer__nav">
+                <ul class="footer__menu">
+                    <li class="menu__li"><a class="menu__link" href="#">Главная</a></li>
+                    <li class="menu__li">
+                        <a class="menu__link" href="#">Регестрация</a>
+                    </li>
+                    <li class="menu__li">
+                        <a class="menu__link" href="#">Авторизация</a>
+                    </li>
+                    <li class="menu__li">
+                        <a class="menu__link" href="#">О нас</a>
+                    </li>
+                </ul>
+
+
+            </nav>
+        </div>
+    </footer> -->
+
+    <!-- <script src="js/app.js"></script> -->
+    <script>
+        function validateForm() {
+          const password = document.getElementById('password').value;
+      
+          if (password.length < 6) {
+            alert("Пароль должен содержать минимум 6 символов.");
+            return false;
+          }
+          return true;
+        }
+      </script>
+</body>
+
+</html>
